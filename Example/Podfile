@@ -1,0 +1,12 @@
+use_frameworks!
+platform :ios, '11.0'
+target 'KHSegmented_Example' do
+  pod 'KHSegmented', :path => '../'
+  
+  target 'KHSegmented_ExampleTests' do
+      inherit! :search_paths
+      
+      
+  end
+end
+

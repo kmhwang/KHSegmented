@@ -1,0 +1,16 @@
+PODS:
+  - KHSegmented (0.1.2)
+
+DEPENDENCIES:
+  - KHSegmented (from `../`)
+
+EXTERNAL SOURCES:
+  KHSegmented:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KHSegmented: ced6195351a6459f000759a48cc9bae2a07fe171
+
+PODFILE CHECKSUM: f080666fa683a1f69c95f805e098f584ebcce6a3
+
+COCOAPODS: 1.5.3

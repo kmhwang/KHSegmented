@@ -1,0 +1,22 @@
+# references:
+# * https://www.objc.io/issues/6-build-tools/travis-ci/
+# * https://github.com/supermarin/xcpretty#usage
+#
+
+cache:
+    - bundler
+    - cocoapods
+
+before_install:
+    - sudo gem install cocoapods
+
+osx_image: xcode10.1
+language: objective-c
+# cache: cocoapods
+# podfile: Example/Podfile
+# before_install:
+# - gem install cocoapods # Since Travis is not always on latest version
+# - pod install --project-directory=Example
+script:
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/KHSegmented.xcworkspace -scheme KHSegmented-Example -sdk iphonesimulator12.1
+- pod lib lint
